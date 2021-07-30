@@ -10,10 +10,11 @@
 </head>
 <body>
 <?php
-  $login_cookie = $_COOKIE['usuario'];
-    if(isset($login_cookie)){
-      echo"Bem-Vindo, $login_cookie <br>";
+  $usuario_cookie = $_COOKIE['usuario'];
+    if(isset($usuario_cookie)){
+      echo"Bem-Vindo, $usuario_cookie <br>";
       echo"Essas informações <font class='blue'>PODEM</font> ser acessadas por você";
+      echo"<br><a href='sair.php' style='color: red;'>Sair</a>";
     }else{
       echo"Bem-Vindo, convidado <br>";
       echo"Essas informações <font class='orange'>NÃO PODEM</font> ser acessadas por você";
