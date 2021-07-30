@@ -8,6 +8,7 @@ $servername = "localhost:3306";
 $database = "acesso_php";
 $username = "root";
 $password = "root";
+
 // Criar conexao
 $conn = mysqli_connect($servername, $username, $password, $database);
 // Check conexao
@@ -23,21 +24,18 @@ echo "Connected successfully";
    empty($_POST['email']) || empty($_POST['senha'])) {
   echo "<script language='javascript' type='text/javascript'>alert('Ainda há campos sem preencher');window.location.href='index.html';</script>";
   exit;
-}
-else {
+}else{
 
       // entrar
       $sql = "INSERT INTO usuarios(nome, usuario, email, senha) VALUES ('$nome','$usuario','$email','$senha')";
       if (mysqli_query($conn, $sql)) {
             echo "Usuario cadastrado com sucesso.<script>location.href = '../entrar';</script>";
       } else {
-            echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+            echo "<script language='javascript' type='text/javascript'>alert('Usuario ou email já cadastrados no sistema, tente um usuario ou email diferentes.');window.location.href='index.html';</script>" . mysqli_error($conn);
       }
       mysqli_close($conn);
 
 
 
 }
- 
-
 ?>
