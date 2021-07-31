@@ -6,7 +6,7 @@ $email = $_POST['email'];
 $senha = md5($_POST['senha']);
 
 // Incluir conexao ao db
-$conn= new mysqli_connect ("localhost:3306","root","root","acesso_php") or die(mysqli_error($conn));
+$conn = new mysqli_connect("localhost:3306","root","root","acesso_php") or die(mysqli_error($conn));
 
 // Checar -Preenchidos- nulos
 if(empty($_POST['nome']) || empty($_POST['usuario']) || 

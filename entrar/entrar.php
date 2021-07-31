@@ -3,7 +3,7 @@ $usuario = $_POST['usuario'];
 $entrar = $_POST['entrar'];
 $senha = md5($_POST['senha']);
 
-$conn= new mysqli_connect ("localhost:3306","root","root","acesso_php") or die(mysqli_error($conn));
+$conn = new mysqli_connect("localhost:3306","root","root","acesso_php") or die(mysqli_error($conn));
   
 if (isset($entrar)) {
             
