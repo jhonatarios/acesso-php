@@ -1,0 +1,74 @@
+#tela inicial:
+	-logo
+	-entrar em uma conta já existente
+	-cadastrar uma conta nova:
+		-nome
+		-usuario
+		-email
+		-senha
+	-ou entre com google
+
+#home:
+	-stories
+	-feed (posts)
+
+#top nav bar
+	-logo
+	-notificacoes
+	-adicionar stories
+
+#bottom nav bar:
+	-home
+	-pesquisar
+	-anuncios de carros
+	-mensagens
+	-perfil
+
+#posts:
+	-titulo
+	-corpo
+	-informacoes
+	-comentarios
+
+#mensagens:
+	-adicionar amigos
+	-criar grupos 
+	-foto(mudar status on/off/trabalhando)
+	-pesquisar
+	-lista de amigos
+
+#anuncio de carros:
+	-listagem:
+		-marca/modelo/cil/ano
+		-foto(carrousel)
+		-informacoes:
+			-modelo/ano
+			-cor
+			-km rodada
+			-combustivel
+			-cambio
+			-portas
+			-final da placa
+		-entrar em contato com o vendedor
+		-descricao
+		-opcionais e acessorios:
+			-airbag; alarme; ar condicionado; ar quente; banco com regulagem de altura; bacnos dianteiros com aquecimento; bancos em couro; som automotivo; computador de bordo; controle automatico de velocidade; controle de tracao; desembacador traseiro; direcao hidraulica; direcao eletrica; encosto de cabeca traseiro; farol de led; farol de xenonio; freio abs; limpador traseiro; protetor de cacamba; retrovisor fotocromico; retrovisor eletrico; rodas de liga leve; sensor de chuva; sensor de estacionamento; teto solar; trava eletrica; vidro eletrico; volante com regulagem de altura;		 
+	-ad/patriocinios
+
+#perfil:
+	(banco de dados: nome; usuario; email; senha; data de nascimento; localizacao; genero; projetos; )
+	-foto (clicar para ver stories)
+	-nome
+	-usuario
+	-seguidores/seguindo/fotos/projetos
+	-carrousel com lista de projetos
+
+#projetos(semelhante ao perfil):
+	-foto principal
+	-marca/modelo/cil/ano
+	-preparacao(aspirada/turbo/supercharger)
+	-destinacao(rua/arrancada/pista/drift)
+	-fotos (grid 5xquantocouber)
+
+
+
